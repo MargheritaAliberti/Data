@@ -8,7 +8,7 @@ ns-type                  = Grid
 pbc                      = xyz
 nstlist                  = 10
 rlist                    = 1
-coulombtype              = pme 
+coulombtype              = Cut-off
 rcoulomb                 = 1
 vdw-type                 = Cut-off
 rvdw                     = 1
@@ -39,7 +39,7 @@ nstenergy                = 5
 energygrps               = 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;, Temperature coupling  
-tcoupl                   = No
+tcoupl                   = v-rescale
 tc-grps                  = Water non-water
 tau-t                    = 0.1 0.1
 ref-t                    = 300 300
@@ -63,7 +63,7 @@ annealing-time           =                 ; es. 50 100 150 50 100 150
 annealing-temp           =                 ; es. 300 400 500 300 400 500
 
 ; GENERATE VELOCITIES FOR STARTUP RUN
-gen-vel                  = yes
+gen-vel                  = no
 gen-temp                 = 300
 gen-seed                 = -1
 
